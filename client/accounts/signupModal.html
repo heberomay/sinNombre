@@ -1,0 +1,40 @@
+<template name="signupModal">
+	<div class="modal fade"  id="signupModal">
+        <div class="modal-dialog mini">
+            <div class="modal-content">
+				<div class="modal-body">
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				    <form id="signForm">
+                        <div class="row">	
+                            <h5 class="text-center text-uppercase">Sign up as</h5>							
+							<div class="align-left w50">
+								<div id="customer" class="btn-false">
+									TRAVELER
+								</div>
+							</div>
+							<div class="align-left w50">
+								<div id="agency" class="btn-false">
+									AGENCY
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" id="email" placeholder="email">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="username" id="username" placeholder="username">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" name="password" id="password" placeholder="password">
+							</div>	
+							<div class="form-group">
+								<input type="password" class="form-control" name="password" id="passwordConfirm" placeholder="Confirm password">
+							</div>
+							<button class="btn btn-primary xl btn-lg">Sign Up</button>
+							<p>If you already have an account, please <a href="">Log In</a></p>
+						</div>
+					</form>		    		
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
