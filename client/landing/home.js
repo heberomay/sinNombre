@@ -45,12 +45,14 @@ Template.home.onCreated(function() {
 });
 
 Template.home.helpers({
-	geolocationError: function() {
+	/*geolocationError: function() {
 		var error = Geolocation.error();
 		return error && error.message;
-	},
+	},*/
     userMapOptions: function() {
 		var latLng = Geolocation.latLng();
+		if(latLng)
+			latLng = {lat:-34.6145638,lng:-58.3648654}
         // Make sure the maps API has loaded
         if (GoogleMaps.loaded() && latLng) {
             // Map initialization options

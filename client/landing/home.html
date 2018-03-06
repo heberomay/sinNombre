@@ -1,10 +1,10 @@
 <template name="home">
     <div class="container-window">
-	    {{#unless geolocationError}}
+	    <!-- {{#unless geolocationError}} -->
 	        {{> googleMap name="userMap" options=userMapOptions}}
-		{{else}}
+		<!-- {{else}}
 		    Geolocation failed: {{geolocationError}}
-		{{/unless}}
+		{{/unless}} -->
 		<div class="search-location"><input type="text" id="locationSearch" class="form-control input-lg"></div>
 	</div>
 	{{reload}}
