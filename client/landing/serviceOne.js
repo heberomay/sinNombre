@@ -5,7 +5,7 @@ Template.serviceOne.onRendered (function(){
 	}).on('dp.change', function(e){ 
 		var day = e.date._d.getDay();
 		console.log("day",day)
-		var array=['sun','mon','thu','wen','fri','sat']
+		var array=['sun','mon','tue','wen', 'thu', 'fri', 'sat']
 		Session.set('day',array[day]);
 	})		
 });
@@ -34,11 +34,12 @@ Template.serviceOne.helpers({
 		var array=[]
 		var day=Session.get('day')
 	    schechuled=this.schechuled
-		schechuled=schechuled[day]
+	    console.log("schechuled",schechuled)
+		/*schechuled=schechuled[day]
 		for (var i in schechuled){
 			array.push({index:schechuled[i]})
 		}
-		return array;
+		return array;*/
 	}
 })
 
