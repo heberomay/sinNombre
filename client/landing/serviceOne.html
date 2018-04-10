@@ -42,7 +42,7 @@
 						    {{#each services}}
 								<div class="col-md-6">
 									<label for="">schechuled</label>
-									<select name="" id="" class="form-control">
+									<select name="" id="timed" class="form-control">
 										{{#each time}}
 										   <option value="{{index}}">{{index}}</option>	
 										{{/each}}
@@ -52,6 +52,7 @@
 									<label for="">Person Number</label>
 									<input type="number" id="quanty" class="form-control">
 								</div>
+						   		<button id="reserveOne" class="btn btn-primary xl">Reserve</button>
 						    {{/each}}
 						</div>
 					</div>

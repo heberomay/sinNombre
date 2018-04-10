@@ -49,4 +49,18 @@ Template.serviceOne.events({
 		alert('hola')
 		console.log('hola',$("#datetimepicker12").data("datetimepicker").getDate());
 	}*/
+	'click #reserveOne':function(e){
+		e.preventDefault()
+		var objeto={}
+		objeto.time=$("#timed").val()
+		objecto.dia=Session.get('day')
+		objeto.cupo=$("#quanty").val()
+		objeto.token_service=this._id
+		
+		Meteor.call("addReserve",this._id,objeto,(error,response){
+			if(!error)
+				Bert.alert('successfully reserved','success','growl-top-right');
+		})
+		
+	}
 })
