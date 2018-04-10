@@ -12,7 +12,7 @@ Meteor.methods({
 	'removeService':function(id){
 		services.remove({_id:id})
 	},
-	addReserve:function(id,objeto){
+	'addReserve':function(id,objeto){
 		reserves.insert(objeto)
 		//Meteor.users.update({_id:id},{$set:{'profile.reserves':{objeto}}})
 	}

@@ -38,9 +38,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="form-gorup">
-						    {{#each services}}
-								<div class="col-md-6 form-gorup">
+						{{#each services}}
+							<div class="form-gorup">
+								<div class="col-md-6">
 									<label for="">schechuled</label>
 									<select name="" id="timed" class="form-control">
 										{{#each time}}
@@ -48,15 +48,17 @@
 										{{/each}}
 									</select>
 								</div>
-								<div class="col-md-6 form-gorup">
+								<div class="col-md-6">
 									<label for="">Person Number</label>
 									<input type="number" id="quanty" class="form-control">
 								</div>
+							</div>
+							<div class="form-group">
 								<div class="col-md-12">
 						   			<button id="reserveOne" class="btn btn-primary xl">Reserve</button>
 								</div>
-						    {{/each}}
-						</div>
+							</div>
+					    {{/each}}
 					</div>
 				</div>
 			</div>
