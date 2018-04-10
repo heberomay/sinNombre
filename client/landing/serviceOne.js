@@ -4,6 +4,7 @@ Template.serviceOne.onRendered (function(){
 		inline: true,
 	}).on('dp.change', function(e){ 
 		var day = e.date._d.getDay();
+		console.log("day",day)
 		var array=['sun','mon','thu','wen','fri','sat']
 		Session.set('day',array[day]);
 	})		
@@ -42,9 +43,9 @@ Template.serviceOne.helpers({
 })
 
 Template.serviceOne.events({
-	'change #datetimepicker12':function(e){
+	/*'change #datetimepicker12':function(e){
 		e.preventDefault();
 		alert('hola')
 		console.log('hola',$("#datetimepicker12").data("datetimepicker").getDate());
-	}
+	}*/
 })
