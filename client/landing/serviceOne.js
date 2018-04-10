@@ -57,7 +57,7 @@ Template.serviceOne.events({
 		objeto.cupo=$("#quanty").val()
 		objeto.token_service=this._id
 		
-		Meteor.call("addReserve",this._id,objeto,(error,response){
+		Meteor.call("addReserve"/*this._id*/,objeto,(error,response){
 			if(!error)
 				Bert.alert('successfully reserved','success','growl-top-right');
 		})

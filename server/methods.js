@@ -14,7 +14,7 @@ Meteor.methods({
 	},
 	addReserve:function(id,objeto){
 		reserves.insert(objeto)
-		Meteor.users.update({_id:id},{$set:{'profile.reserves':{objeto}}})
+		//Meteor.users.update({_id:id},{$set:{'profile.reserves':{objeto}}})
 	}
 
 });
