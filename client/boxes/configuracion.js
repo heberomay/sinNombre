@@ -46,6 +46,10 @@ Template.configuracion.helpers ({
 		}else {
 			var latLng = {lat:Meteor.user().profile.location.lat, lng:Meteor.user().profile.location.lng};
 	    }
+
+	    if(latLng === undefined)
+	    	latLng={lat:-34.6145638,lng:-58.3648654}
+	    
         // Make sure the maps API has loaded and location was seted
         if (GoogleMaps.loaded() && latLng) {
             // Map initialization options
