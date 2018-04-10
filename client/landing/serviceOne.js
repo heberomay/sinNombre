@@ -35,11 +35,11 @@ Template.serviceOne.helpers({
 		var day=Session.get('day')
 	    scheduled=this.escheduled
 	    console.log("scheduled",scheduled)
-		/*scheduled=scheduled[day]
+		scheduled=scheduled[day]
 		for (var i in scheduled){
 			array.push({index:scheduled[i]})
 		}
-		return array;*/
+		return array;
 	}
 })
 
