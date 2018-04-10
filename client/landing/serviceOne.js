@@ -51,6 +51,8 @@ Template.serviceOne.events({
 		objeto.dia=Session.get('day')
 		objeto.cupo=$("#quanty").val()
 		objeto.token_service=this._id
+
+		console.log(objeto)
 		
 		Meteor.call("addReserve"/*this._id*/,objeto,(error,response)=>{
 			if(!error)
