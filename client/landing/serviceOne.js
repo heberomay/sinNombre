@@ -48,7 +48,7 @@ Template.serviceOne.events({
 		e.preventDefault()
 		var objeto={}
 		objeto.time=$("#timed").val()
-		objecto.dia=Session.get('day')
+		objeto.dia=Session.get('day')
 		objeto.cupo=$("#quanty").val()
 		objeto.token_service=this._id
 		
