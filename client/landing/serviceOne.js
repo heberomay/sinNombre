@@ -33,7 +33,7 @@ Template.serviceOne.helpers({
 	time:function(){
 		var array=[]
 		var day=Session.get('day')
-	    schechuled=this.schechuled
+	    schechuled=this.eschechuled
 	    console.log("schechuled",schechuled)
 		/*schechuled=schechuled[day]
 		for (var i in schechuled){

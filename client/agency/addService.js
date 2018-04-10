@@ -169,7 +169,7 @@ Template.addService.events ({
 			    escheduled[hito[j]]=crono;
 			}
 		}
-		comp.escheduled=escheduled;
+		comp.scheduled=escheduled;
 		if(valid){
 			Meteor.call('addServiceOne',comp,(error,response)=>{
 				if(error){
