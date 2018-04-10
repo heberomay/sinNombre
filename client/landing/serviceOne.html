@@ -39,24 +39,24 @@
 							</div>
 						</div>
 						{{#each services}}
-							<div class="form-gorup">
-								<div class="col-md-6">
-									<label for="">schechuled</label>
-									<select name="" id="timed" class="form-control">
-										{{#each time}}
-										   <option value="{{index}}">{{index}}</option>	
-										{{/each}}
-									</select>
-								</div>
-								<div class="col-md-6">
-									<label for="">Person Number</label>
-									<input type="number" id="quanty" class="form-control">
-								</div>
+							
+							<div class="form-gorup col-md-6">
+								<label for="">schechuled</label>
+								<select name="" id="timed" class="form-control">
+									{{#each time}}
+									   <option value="{{index}}">{{index}}</option>	
+									{{/each}}
+								</select>
 							</div>
-							<div class="form-group">
-								<div class="col-md-12">
-						   			<button id="reserveOne" class="btn btn-primary xl">Reserve</button>
-								</div>
+							<div class="form-gorup col-md-6">
+								<label for="">Person Number</label>
+								<input type="number" id="quanty" class="form-control">
+							</div>
+							
+							<div class="form-group col-md-12">
+								
+						   		<button id="reserveOne" class="btn btn-primary xl">Reserve</button>
+								
 							</div>
 					    {{/each}}
 					</div>
