@@ -31,3 +31,7 @@ Meteor.publish("user2Role", function() {
 Meteor.publish("allServices", function() {
     return services.find();
 });
+
+Meteor.publish("allReserves", function() {
+    return reserves.find();
+});
