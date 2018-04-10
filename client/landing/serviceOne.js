@@ -44,11 +44,6 @@ Template.serviceOne.helpers({
 })
 
 Template.serviceOne.events({
-	/*'change #datetimepicker12':function(e){
-		e.preventDefault();
-		alert('hola')
-		console.log('hola',$("#datetimepicker12").data("datetimepicker").getDate());
-	}*/
 	'click #reserveOne':function(e){
 		e.preventDefault()
 		var objeto={}
@@ -57,7 +52,7 @@ Template.serviceOne.events({
 		objeto.cupo=$("#quanty").val()
 		objeto.token_service=this._id
 		
-		Meteor.call("addReserve"/*this._id*/,objeto,(error,response){
+		Meteor.call("addReserve"/*this._id*/,objeto,(error,response)=>{
 			if(!error)
 				Bert.alert('successfully reserved','success','growl-top-right');
 		})
